@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1033be 0%, #5182e5 100%);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    background: #1951ec;
+    color: #e8e8e8;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.search-container {
+    padding: 20px;
+    background: #1951ec;
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px #0053d8;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    background: #0053d8;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #004fce;
+    transform: translateY(-2px);
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.img-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    filter: drop-shadow(0 5px 15px rgba(0, 180, 216, 0.3));
+}
+
+.temp {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.city-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.weather {
+    font-size: 14px;
+    color: rgba(232, 232, 232, 0.8);
+    letter-spacing: 1px;
+}
+
+.bottom-cards {
+    display: flex;
+    justify-content: space-around;
+    background: #2157ed;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.humidity img,
+.wind img {
+    width: 30px;
+    height: 30px;
+}
+
+.humidity span,
+.wind span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.divider {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
